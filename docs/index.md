@@ -34,12 +34,13 @@ uv run pytest tests/ -v
 
 ```
 learn-fluent-python-clinical/
-├── clinicalnlp/                       # Package source
-│   ├── core/                          # Module 1: Python Data Model
-│   ├── containers/                    # Module 2: Data Structures
-│   ├── pipeline/                      # Module 3: Functions & Decorators
-│   ├── models/                        # Module 4: OOP & Protocols
-│   └── streaming/                     # Module 5: Generators & Async
+├── src/
+│   └── clinicalnlp/                   # Installable Python package
+│       ├── core/                      # Module 1: Python Data Model
+│       ├── containers/                # Module 2: Data Structures
+│       ├── pipeline/                  # Module 3: Functions & Decorators
+│       ├── models/                    # Module 4: OOP & Protocols
+│       └── streaming/                 # Module 5: Generators & Async
 ├── Module-1-Data-Model/               # Tutorial scripts
 ├── Module-2-Data-Structures/
 ├── Module-3-Functions-Decorators/

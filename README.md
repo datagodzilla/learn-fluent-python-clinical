@@ -28,12 +28,14 @@ A structured Python package (`clinicalnlp`) that teaches **24 chapters of Fluent
 
 ```
 learn-fluent-python-clinical/
-├── clinicalnlp/                       # Package source (5 modules)
-│   ├── core/                          # Module 1: Python Data Model
-│   ├── containers/                    # Module 2: Data Structures
-│   ├── pipeline/                      # Module 3: Decorators & Closures
-│   ├── models/                        # Module 4: OOP & Protocols
-│   └── streaming/                     # Module 5: Generators & Async
+├── src/                               # Source layout (PyPA recommended)
+│   └── clinicalnlp/                   # The installable Python package
+│       ├── __init__.py
+│       ├── core/                      # Module 1: Python Data Model
+│       ├── containers/                # Module 2: Data Structures
+│       ├── pipeline/                  # Module 3: Decorators & Closures
+│       ├── models/                    # Module 4: OOP & Protocols
+│       └── streaming/                 # Module 5: Generators & Async
 ├── Module-1-Data-Model/               # Tutorial: dunders, protocols
 ├── Module-2-Data-Structures/          # Tutorial: dict, set, Counter
 ├── Module-3-Functions-Decorators/     # Tutorial: closures, decorators
@@ -69,11 +71,11 @@ uv run pytest tests/ -v
 
 | # | Module | Package | Tutorial | Fluent Python | Clinical Problem |
 |---|--------|---------|----------|---------------|-----------------|
-| 1 | Python Data Model | `clinicalnlp/core/` | `Module-1-Data-Model/` | Ch 1-3 | PatientRecord with dunders |
-| 2 | Data Structures | `clinicalnlp/containers/` | `Module-2-Data-Structures/` | Ch 2-6 | OMOP vocabulary, token frequency |
-| 3 | Functions & Decorators | `clinicalnlp/pipeline/` | `Module-3-Functions-Decorators/` | Ch 7-10 | HIPAA audit, PHI validation, caching |
-| 4 | OOP & Protocols | `clinicalnlp/models/` | `Module-4-OOP-Protocols/` | Ch 11-16 | Composable NER pipeline |
-| 5 | Generators & Async | `clinicalnlp/streaming/` | `Module-5-Generators-Async/` | Ch 17-24 | Stream 2M notes, async FHIR |
+| 1 | Python Data Model | `src/clinicalnlp/core/` | `Module-1-Data-Model/` | Ch 1-3 | PatientRecord with dunders |
+| 2 | Data Structures | `src/clinicalnlp/containers/` | `Module-2-Data-Structures/` | Ch 2-6 | OMOP vocabulary, token frequency |
+| 3 | Functions & Decorators | `src/clinicalnlp/pipeline/` | `Module-3-Functions-Decorators/` | Ch 7-10 | HIPAA audit, PHI validation, caching |
+| 4 | OOP & Protocols | `src/clinicalnlp/models/` | `Module-4-OOP-Protocols/` | Ch 11-16 | Composable NER pipeline |
+| 5 | Generators & Async | `src/clinicalnlp/streaming/` | `Module-5-Generators-Async/` | Ch 17-24 | Stream 2M notes, async FHIR |
 | 6 | Capstone | — | `Module-6-Capstone/` | All | Interactive Streamlit demo |
 
 ## Documentation
