@@ -1,0 +1,71 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Package build artifacts
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Linting & type checking
+.ruff_cache/
+.mypy_cache/
+
+# Compiled extensions
+*.so
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Claude Code artifacts (if ever copied into project)
+.claude/
+.claude.*
+CLAUDE.md
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Jupyter (not used, but just in case)
+.ipynb_checkpoints/
+
+# Large files that should NOT be in the repo
+*.pdf
+*.zip
+*.tar.gz
+
+# Fluent Python book PDF (14MB — not for GitHub)
+Fluent-Python-*.pdf
+
+# OS-generated
+Thumbs.db
+ehthumbs.db
+Desktop.ini

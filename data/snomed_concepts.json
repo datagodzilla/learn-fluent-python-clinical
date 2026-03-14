@@ -1,0 +1,22 @@
+[
+  {"concept_id": 73211009, "concept_code": "73211009", "vocabulary_id": "SNOMED", "concept_name": "Diabetes mellitus", "domain": "Condition"},
+  {"concept_id": 38341003, "concept_code": "38341003", "vocabulary_id": "SNOMED", "concept_name": "Hypertensive disorder", "domain": "Condition"},
+  {"concept_id": 84114007, "concept_code": "84114007", "vocabulary_id": "SNOMED", "concept_name": "Heart failure", "domain": "Condition"},
+  {"concept_id": 13645005, "concept_code": "13645005", "vocabulary_id": "SNOMED", "concept_name": "Chronic obstructive lung disease", "domain": "Condition"},
+  {"concept_id": 233604007, "concept_code": "233604007", "vocabulary_id": "SNOMED", "concept_name": "Pneumonia", "domain": "Condition"},
+  {"concept_id": 709044004, "concept_code": "709044004", "vocabulary_id": "SNOMED", "concept_name": "Chronic kidney disease", "domain": "Condition"},
+  {"concept_id": 49436004, "concept_code": "49436004", "vocabulary_id": "SNOMED", "concept_name": "Atrial fibrillation", "domain": "Condition"},
+  {"concept_id": 230690007, "concept_code": "230690007", "vocabulary_id": "SNOMED", "concept_name": "Cerebrovascular accident", "domain": "Condition"},
+  {"concept_id": 254837009, "concept_code": "254837009", "vocabulary_id": "SNOMED", "concept_name": "Malignant neoplasm of breast", "domain": "Condition"},
+  {"concept_id": 35489007, "concept_code": "35489007", "vocabulary_id": "SNOMED", "concept_name": "Depressive disorder", "domain": "Condition"},
+  {"concept_id": 195967001, "concept_code": "195967001", "vocabulary_id": "SNOMED", "concept_name": "Asthma", "domain": "Condition"},
+  {"concept_id": 396275006, "concept_code": "396275006", "vocabulary_id": "SNOMED", "concept_name": "Osteoarthritis", "domain": "Condition"},
+  {"concept_id": 128053003, "concept_code": "128053003", "vocabulary_id": "SNOMED", "concept_name": "Deep venous thrombosis", "domain": "Condition"},
+  {"concept_id": 271737000, "concept_code": "271737000", "vocabulary_id": "SNOMED", "concept_name": "Anemia", "domain": "Condition"},
+  {"concept_id": 91302008, "concept_code": "91302008", "vocabulary_id": "SNOMED", "concept_name": "Sepsis", "domain": "Condition"},
+  {"concept_id": 14669001, "concept_code": "14669001", "vocabulary_id": "SNOMED", "concept_name": "Acute renal failure syndrome", "domain": "Condition"},
+  {"concept_id": 68566005, "concept_code": "68566005", "vocabulary_id": "SNOMED", "concept_name": "Urinary tract infectious disease", "domain": "Condition"},
+  {"concept_id": 40930008, "concept_code": "40930008", "vocabulary_id": "SNOMED", "concept_name": "Hypothyroidism", "domain": "Condition"},
+  {"concept_id": 414916001, "concept_code": "414916001", "vocabulary_id": "SNOMED", "concept_name": "Obesity", "domain": "Condition"},
+  {"concept_id": 235595009, "concept_code": "235595009", "vocabulary_id": "SNOMED", "concept_name": "Gastroesophageal reflux disease", "domain": "Condition"}
+]

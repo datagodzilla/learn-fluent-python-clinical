@@ -1,0 +1,17 @@
+[
+  {"rxnorm_cui": "860975", "name": "Metformin 500 MG Oral Tablet", "ingredient": "Metformin", "dose_form": "Oral Tablet", "strength": "500 MG"},
+  {"rxnorm_cui": "314076", "name": "Lisinopril 10 MG Oral Tablet", "ingredient": "Lisinopril", "dose_form": "Oral Tablet", "strength": "10 MG"},
+  {"rxnorm_cui": "329528", "name": "Amlodipine 5 MG Oral Tablet", "ingredient": "Amlodipine", "dose_form": "Oral Tablet", "strength": "5 MG"},
+  {"rxnorm_cui": "259255", "name": "Atorvastatin 20 MG Oral Tablet", "ingredient": "Atorvastatin", "dose_form": "Oral Tablet", "strength": "20 MG"},
+  {"rxnorm_cui": "866924", "name": "Metoprolol Succinate 50 MG Extended Release Oral Tablet", "ingredient": "Metoprolol", "dose_form": "Extended Release Oral Tablet", "strength": "50 MG"},
+  {"rxnorm_cui": "198053", "name": "Omeprazole 20 MG Delayed Release Oral Capsule", "ingredient": "Omeprazole", "dose_form": "Delayed Release Oral Capsule", "strength": "20 MG"},
+  {"rxnorm_cui": "243670", "name": "Aspirin 81 MG Oral Tablet", "ingredient": "Aspirin", "dose_form": "Oral Tablet", "strength": "81 MG"},
+  {"rxnorm_cui": "200801", "name": "Furosemide 40 MG Oral Tablet", "ingredient": "Furosemide", "dose_form": "Oral Tablet", "strength": "40 MG"},
+  {"rxnorm_cui": "261551", "name": "Insulin Glargine 100 UNT/ML Injectable Solution", "ingredient": "Insulin Glargine", "dose_form": "Injectable Solution", "strength": "100 UNT/ML"},
+  {"rxnorm_cui": "966247", "name": "Levothyroxine Sodium 75 MCG Oral Tablet", "ingredient": "Levothyroxine", "dose_form": "Oral Tablet", "strength": "75 MCG"},
+  {"rxnorm_cui": "855332", "name": "Warfarin Sodium 5 MG Oral Tablet", "ingredient": "Warfarin", "dose_form": "Oral Tablet", "strength": "5 MG"},
+  {"rxnorm_cui": "245314", "name": "Albuterol 0.083 MG/ML Inhalation Solution", "ingredient": "Albuterol", "dose_form": "Inhalation Solution", "strength": "0.083 MG/ML"},
+  {"rxnorm_cui": "312617", "name": "Prednisone 10 MG Oral Tablet", "ingredient": "Prednisone", "dose_form": "Oral Tablet", "strength": "10 MG"},
+  {"rxnorm_cui": "313782", "name": "Acetaminophen 500 MG Oral Tablet", "ingredient": "Acetaminophen", "dose_form": "Oral Tablet", "strength": "500 MG"},
+  {"rxnorm_cui": "308182", "name": "Amoxicillin 500 MG Oral Capsule", "ingredient": "Amoxicillin", "dose_form": "Oral Capsule", "strength": "500 MG"}
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "note_id": "NOTE-001",
+    "patient_mrn": "MRN-10001",
+    "note_type": "Discharge Summary",
+    "date": "2024-03-15",
+    "text": "Patient is a 67-year-old male with history of type 2 diabetes mellitus (E11.9), hypertension (I10), and chronic kidney disease stage 3 (N18.3). Admitted for acute exacerbation of heart failure (I50.9) with bilateral lower extremity edema and dyspnea on exertion. BNP elevated at 1840 pg/mL, creatinine 2.1 mg/dL (baseline 1.6). Started on IV furosemide 40 mg BID with improvement in volume status over 3 days. Discharged on metformin 1000 mg BID, lisinopril 20 mg daily, furosemide 40 mg PO daily, and metoprolol succinate 50 mg daily. Follow-up with cardiology in 1 week and nephrology in 2 weeks."
+  },
+  {
+    "note_id": "NOTE-002",
+    "patient_mrn": "MRN-10002",
+    "note_type": "Discharge Summary",
+    "date": "2024-04-02",
+    "text": "Patient is a 54-year-old female presenting with acute ST-elevation myocardial infarction (I21.0) of the anterior wall. Cardiac catheterization revealed 95% occlusion of the left anterior descending artery; successful PCI with drug-eluting stent placement performed. Troponin I peaked at 18.4 ng/mL, ejection fraction estimated at 40% on bedside echocardiogram. Past medical history significant for hyperlipidemia (E78.5) and obesity (E66.01, BMI 34.2). Initiated on dual antiplatelet therapy with aspirin 81 mg daily and clopidogrel 75 mg daily, atorvastatin 80 mg daily, and metoprolol tartrate 25 mg BID. Cardiac rehabilitation referral placed; patient counseled on smoking cessation and dietary modifications."
+  },
+  {
+    "note_id": "NOTE-003",
+    "patient_mrn": "MRN-10003",
+    "note_type": "Discharge Summary",
+    "date": "2024-05-10",
+    "text": "Patient is a 72-year-old female with stage IIIA non-small cell lung cancer (C34.11) diagnosed on CT-guided biopsy showing adenocarcinoma, EGFR mutation positive. Admitted for initiation of first-line therapy with erlotinib 150 mg daily after discussion of treatment options with oncology. Staging PET/CT demonstrated right upper lobe primary mass 4.2 cm with ipsilateral mediastinal lymphadenopathy, no distant metastases. Comorbidities include COPD (J44.1) on tiotropium 18 mcg inhaled daily, atrial fibrillation (I48.91) on apixaban 5 mg BID, and GERD (K21.0) on omeprazole 20 mg daily. Baseline labs: hemoglobin 11.2 g/dL, platelets 198 K/uL, creatinine 0.9 mg/dL, ALT 22 U/L. Follow-up CT in 8 weeks to assess treatment response."
+  },
+  {
+    "note_id": "NOTE-004",
+    "patient_mrn": "MRN-10004",
+    "note_type": "Discharge Summary",
+    "date": "2024-06-18",
+    "text": "Patient is a 58-year-old male admitted with community-acquired pneumonia (J18.9) complicated by sepsis (A41.9) and acute kidney injury stage 2 (N17.9). Presented with 4-day history of productive cough, fever 39.2C, and hypotension requiring IV normal saline resuscitation. Blood cultures grew Streptococcus pneumoniae; treated with IV ceftriaxone 1 g daily transitioned to oral amoxicillin 875 mg BID on day 4. Creatinine peaked at 3.4 mg/dL (baseline 1.0) with recovery to 1.3 mg/dL at discharge. WBC trended from 18.2 to 9.1 K/uL, CRP from 214 to 28 mg/L. Past medical history includes hypothyroidism (E03.9) on levothyroxine 75 mcg daily and depression (F32.1) on sertraline 100 mg daily. Discharged with 10-day course of oral antibiotics and follow-up with primary care in 5 days."
+  },
+  {
+    "note_id": "NOTE-005",
+    "patient_mrn": "MRN-10005",
+    "note_type": "Discharge Summary",
+    "date": "2024-07-22",
+    "text": "Patient is a 78-year-old female presenting with acute ischemic stroke (I63.9) with right-sided hemiparesis and expressive aphasia, last known well 2 hours prior to arrival. CT head negative for hemorrhage; CT angiography showed left middle cerebral artery M1 occlusion. IV alteplase administered within 3.5 hours of symptom onset followed by successful mechanical thrombectomy with TICI 2b reperfusion. NIHSS improved from 16 on admission to 6 at 24 hours. MRI brain confirmed left MCA territory infarct with small volume. Medical history significant for atrial fibrillation (I48.91) — patient was non-compliant with prescribed warfarin — and type 2 diabetes mellitus (E11.9) with HbA1c 7.8%. Transitioned to apixaban 5 mg BID for secondary stroke prevention, continued amlodipine 10 mg daily for hypertension (I10), and insulin glargine 22 units at bedtime. Discharged to acute inpatient rehabilitation with neurology follow-up in 2 weeks."
+  }
+]
