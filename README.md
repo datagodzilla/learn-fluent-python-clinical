@@ -27,18 +27,24 @@ A structured Python package (`clinicalnlp`) that teaches **24 chapters of Fluent
 ## Project Structure
 
 ```
-clinicalnlp/
-├── clinicalnlp/           # Package source (5 modules)
-│   ├── core/              # Module 1: Python Data Model (dunders, protocols)
-│   ├── containers/        # Module 2: Data Structures (dict, set, Counter)
-│   ├── pipeline/          # Module 3: Decorators & Closures
-│   ├── models/            # Module 4: OOP (Protocol, ABC, composition)
-│   └── streaming/         # Module 5: Generators & Async
-├── tutorials/             # Standalone .py tutorial scripts
-├── data/                  # Synthetic clinical data (SNOMED, LOINC, RxNorm, OMOP)
-├── tests/                 # pytest suite
-├── docs/                  # Documentation & learning guides
-└── app/                   # Streamlit capstone app
+learn-fluent-python-clinical/
+├── clinicalnlp/                       # Package source (5 modules)
+│   ├── core/                          # Module 1: Python Data Model
+│   ├── containers/                    # Module 2: Data Structures
+│   ├── pipeline/                      # Module 3: Decorators & Closures
+│   ├── models/                        # Module 4: OOP & Protocols
+│   └── streaming/                     # Module 5: Generators & Async
+├── Module-1-Data-Model/               # Tutorial: dunders, protocols
+├── Module-2-Data-Structures/          # Tutorial: dict, set, Counter
+├── Module-3-Functions-Decorators/     # Tutorial: closures, decorators
+├── Module-4-OOP-Protocols/            # Tutorial: Protocol, ABC, composition
+├── Module-5-Generators-Async/         # Tutorial: generators, async FHIR
+├── Module-6-Capstone/                 # Streamlit capstone app
+├── data/                              # Synthetic clinical data (JSON)
+├── tests/                             # pytest suite
+├── docs/                              # Documentation & learning guides
+├── pyproject.toml                     # Project config (uv/hatch)
+└── uv.lock                            # Reproducible dependency lock
 ```
 
 ## Quick Start
@@ -46,21 +52,29 @@ clinicalnlp/
 ```bash
 git clone https://github.com/datagodzilla/learn-fluent-python-clinical.git
 cd learn-fluent-python-clinical
+
+# Using uv (recommended)
+uv venv && source .venv/bin/activate
+uv pip install -e ".[dev]"
+
+# Or using pip
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
-pytest tests/ -v
+
+# Run tests
+uv run pytest tests/ -v
 ```
 
 ## Modules
 
-| # | Module | Directory | Fluent Python Chapters | Clinical Problem |
-|---|--------|-----------|----------------------|-----------------|
-| 1 | Python Data Model | `core/` | 1-3 | PatientRecord with dunders |
-| 2 | Data Structures | `containers/` | 2-6 | OMOP vocabulary, token frequency |
-| 3 | Functions & Decorators | `pipeline/` | 7-10 | HIPAA audit, PHI validation, caching |
-| 4 | OOP & Protocols | `models/` | 11-16 | Composable NER pipeline |
-| 5 | Generators & Async | `streaming/` | 17-24 | Stream 2M notes, async FHIR |
-| 6 | Capstone | `app/` | All | Interactive Streamlit demo |
+| # | Module | Package | Tutorial | Fluent Python | Clinical Problem |
+|---|--------|---------|----------|---------------|-----------------|
+| 1 | Python Data Model | `clinicalnlp/core/` | `Module-1-Data-Model/` | Ch 1-3 | PatientRecord with dunders |
+| 2 | Data Structures | `clinicalnlp/containers/` | `Module-2-Data-Structures/` | Ch 2-6 | OMOP vocabulary, token frequency |
+| 3 | Functions & Decorators | `clinicalnlp/pipeline/` | `Module-3-Functions-Decorators/` | Ch 7-10 | HIPAA audit, PHI validation, caching |
+| 4 | OOP & Protocols | `clinicalnlp/models/` | `Module-4-OOP-Protocols/` | Ch 11-16 | Composable NER pipeline |
+| 5 | Generators & Async | `clinicalnlp/streaming/` | `Module-5-Generators-Async/` | Ch 17-24 | Stream 2M notes, async FHIR |
+| 6 | Capstone | — | `Module-6-Capstone/` | All | Interactive Streamlit demo |
 
 ## Documentation
 

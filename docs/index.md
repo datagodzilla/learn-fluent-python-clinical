@@ -5,10 +5,10 @@
 ## Quickstart
 
 ```bash
-cd clinicalnlp/
-python -m venv .venv && source .venv/bin/activate
-pip install -e ".[dev]"
-pytest tests/ -v
+cd learn-fluent-python-clinical/
+uv venv && source .venv/bin/activate
+uv pip install -e ".[dev]"
+uv run pytest tests/ -v
 ```
 
 ## Module Documentation
@@ -33,16 +33,20 @@ pytest tests/ -v
 ## Project Structure
 
 ```
-clinicalnlp/
-├── clinicalnlp/          # Package source
-│   ├── core/             # Module 1: Python Data Model
-│   ├── containers/       # Module 2: Data Structures
-│   ├── pipeline/         # Module 3: Functions & Decorators
-│   ├── models/           # Module 4: OOP & Protocols
-│   └── streaming/        # Module 5: Generators & Async
-├── tutorials/            # Standalone .py tutorial scripts
-├── data/                 # Synthetic clinical data (JSON)
-├── tests/                # pytest suite
-├── docs/                 # This documentation
-└── app/                  # Streamlit capstone
+learn-fluent-python-clinical/
+├── clinicalnlp/                       # Package source
+│   ├── core/                          # Module 1: Python Data Model
+│   ├── containers/                    # Module 2: Data Structures
+│   ├── pipeline/                      # Module 3: Functions & Decorators
+│   ├── models/                        # Module 4: OOP & Protocols
+│   └── streaming/                     # Module 5: Generators & Async
+├── Module-1-Data-Model/               # Tutorial scripts
+├── Module-2-Data-Structures/
+├── Module-3-Functions-Decorators/
+├── Module-4-OOP-Protocols/
+├── Module-5-Generators-Async/
+├── Module-6-Capstone/                 # Streamlit app
+├── data/                              # Synthetic clinical data (JSON)
+├── tests/                             # pytest suite
+└── docs/                              # This documentation
 ```
