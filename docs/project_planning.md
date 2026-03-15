@@ -237,13 +237,120 @@ Every session follows this flow:
 
 ---
 
+## Existing .claude/ Automation Pipeline
+
+The project has a rich set of existing automation commands, agents, workflows, and templates in `.claude/` that integrate directly into Phase 3 (Publication). These are reusable tools already configured for the `datagodzilla` GitHub Pages site.
+
+### Available Commands for Blog & Publishing
+
+| Command | Purpose | When to Use |
+|---------|---------|-------------|
+| `/notebooklm-generate-blog-post` | Generate narrative blog post with Feynman Technique, Karpathy style, healthcare architect voice | Phase 3.1 — Write the blog post |
+| `/notebooklm-publish-github` | Publish to GitHub Pages with Jekyll formatting, deployment verification | Phase 3.4 — Push to datagodzilla.github.io |
+| `/notebooklm-queue-for-publish` | Queue posts for batch publishing | Phase 3.4 — If publishing multiple posts |
+| `/notebooklm-generate-mindmap` | Generate concept mind maps (ASCII + Mermaid + SVG) | Phase 3.2 — Create architecture diagram |
+| `/notebooklm-generate-slides` | Generate Marp presentation deck | Optional — conference/meetup presentation |
+| `/notebooklm-generate-podcast` | Generate audio companion (two-host format) | Optional — audio version of blog |
+| `/notebooklm-generate-flashcards` | Generate study flashcards from content | Optional — learning companion |
+| `/notebooklm-generate-quiz` | Generate self-assessment quiz | Optional — interactive learning |
+| `/notebooklm-generate-infographics` | Generate visual infographics | Phase 3.2 — Module overview graphics |
+| `/notebooklm-generate-hero-image` | Generate blog post hero image | Phase 3.3 — GitHub/blog visual |
+
+### Available Agents
+
+| Agent | Role | When to Use |
+|-------|------|-------------|
+| `@notebooklm-blog-publisher` | Blog optimization, SEO, formatting | Phase 3.1 — Polish the post |
+| `@notebooklm-clinical-expert` | Clinical accuracy review | Phase 3.1 — Verify clinical content |
+| `@notebooklm-ai-expert` | Technical accuracy review | Phase 3.1 — Verify Python/code content |
+| `@notebooklm-python-developer` | Python code review | Phase 2.1 — Code quality review |
+| `@notebooklm-visual-designer` | Visual storytelling, diagrams | Phase 3.2 — Create visuals |
+| `@notebooklm-github-publisher` | Git ops, Jekyll formatting, deployment | Phase 3.4 — Publish to GitHub Pages |
+| `@notebooklm-doc-formatter` | Professional document formatting | Phase 3.3 — Final README polish |
+
+### Available Workflows
+
+| Workflow | Purpose | File |
+|----------|---------|------|
+| Blog Publishing | End-to-end blog post generation and publishing | `.claude/workflows/blog-publishing-workflow.md` |
+| GitHub Publishing Ops | Git operations, Jekyll, deployment verification | `.claude/workflows/github-publishing-ops-workflow.md` |
+| Visual Storytelling | Transform content into visual narratives | `.claude/workflows/visual-storytelling-workflow.md` |
+| Mindmap | Generate concept maps in multiple formats | `.claude/workflows/mindmap-workflow.md` |
+
+### Available Templates
+
+| Template | Purpose | File |
+|----------|---------|------|
+| Blog Post | Full blog post structure with SEO, frontmatter, learning resources | `.claude/templates/blog-post-template.md` |
+| GitHub Pages Post | Jekyll-compatible post with frontmatter | `.claude/templates/github-pages-post-template.md` |
+| Mind Map | Concept visualization template | `.claude/templates/mindmap-template.md` |
+| Slide Deck | Marp presentation template | `.claude/templates/slide-deck-template.md` |
+
+### Blog Post Style Guide (from existing commands)
+
+All blog posts follow these standards:
+- **Writing Style**: Karpathy Narrative + Feynman Technique
+- **Voice**: Seasoned healthcare data systems architect
+- **Target Audience**: Junior clinical informatics students
+- **Output**: 3 visualization versions (Mermaid, ASCII, Graphviz SVG)
+- **SEO**: Optimized slugs, meta descriptions, keyword targeting
+- **Enrichment**: Audio podcast, flashcards, quiz, mind map companions
+- **Publishing Target**: `datagodzilla.github.io` via GitHub Pages (Jekyll)
+
+### Phase 3 Execution Using .claude/ Pipeline
+
+```
+Phase 3 Publication Pipeline:
+
+Step 1: Generate blog post
+  /notebooklm-generate-blog-post docs/project_planning.md
+  → Produces 3 versions: Mermaid, ASCII, Graphviz
+  → Uses @notebooklm-clinical-expert + @notebooklm-ai-expert
+  → Applies Karpathy narrative style + Feynman technique
+
+Step 2: Generate companion artifacts
+  /notebooklm-generate-mindmap [blog-post-path]
+  /notebooklm-generate-infographics [blog-post-path]
+  → Architecture diagram, module flow, generator pipeline visual
+
+Step 3: Queue for publish
+  /notebooklm-queue-for-publish [blog-post-path]
+  → Validates frontmatter, content, images
+
+Step 4: Publish to GitHub Pages
+  /notebooklm-publish-github --queue
+  → Copies to _posts/, handles assets, pushes, verifies deployment
+  → Live at: https://datagodzilla.github.io/YYYY/MM/DD/slug/
+
+Step 5: Cross-publish to clinicalaiinsider
+  → Sync fork, or publish separately to clinicalaiinsider GitHub Pages
+```
+
+### Blog Post Series Plan
+
+The clinicalnlp project can generate a multi-part blog series:
+
+| Post # | Title | Source Content | When |
+|--------|-------|---------------|------|
+| 1 | "Building a Clinical NLP Package: Why Fluent Python Matters" | `docs/project_planning.md` + `docs/core_concepts_and_best_practices.md` | After Module 1 complete |
+| 2 | "The Python Data Model in Clinical Informatics" | Module 1 tutorial + `src/clinicalnlp/core/` | After Module 1 complete |
+| 3 | "Data Structures That Power Clinical Decision Support" | Module 2 tutorial + `src/clinicalnlp/containers/` | After Module 2 complete |
+| 4 | "Decorators for HIPAA-Compliant AI Endpoints" | Module 3 tutorial + `src/clinicalnlp/pipeline/` | After Module 3 complete |
+| 5 | "OOP Patterns for Clinical NLP Pipelines" | Module 4 tutorial + `src/clinicalnlp/models/` | After Module 4 complete |
+| 6 | "Streaming 2M Clinical Notes with Python Generators" | Module 5 tutorial + `src/clinicalnlp/streaming/` | After Module 5 complete |
+| 7 | "From Learning Project to PyPI Package: The Full Journey" | Capstone + full project retrospective | After Phase 2 complete |
+
+Each post uses `/notebooklm-generate-blog-post` with the module tutorial as input, enriched with companion artifacts (podcast, flashcards, quiz, mind map).
+
+---
+
 ## Timeline Summary
 
 | Phase | Sessions | Focus |
 |-------|----------|-------|
 | **Phase 1: Training** | ~35 sessions | Module tutorials + production implementation |
 | **Phase 2: Hardening** | ~10 sessions | Coverage, types, CLI, CI/CD, PyPI |
-| **Phase 3: Publication** | ~5 sessions | Blog, diagrams, GitHub polish, publish |
+| **Phase 3: Publication** | ~5 sessions | Blog series (7 posts), diagrams, GitHub polish |
 
 **Total: ~50 sessions at one concept per session.**
 
